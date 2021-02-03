@@ -25,6 +25,7 @@
       xhr.onload = (evt) => {
         try {
           const resTxt = evt.target.responseText
+          document.getElementById("testDiv").innerHTML = resTxt
           console.log("resTxt:%s", resTxt)
           // const res = JSON.parse(resTxt);
 
@@ -46,5 +47,6 @@
   </script>
   <body>
   <input type="button" value="get请求啊" onclick='requestTest("http://localhost:8080/testhttp/liuyang?userName=zhangsan&age=18&sex=1&abctest")'>
+  <div id="testDiv"></div>
   </body>
 </html>

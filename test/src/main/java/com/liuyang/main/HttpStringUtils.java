@@ -6,7 +6,7 @@ import java.util.Map;
 public class HttpStringUtils {
 
     /**
-     * 解析字符串& = 转换为map key value
+     * 解析字符串转换为map key value
      * @param queryString 解析的字符串
      * @return
      * @throws Exception 测试抛出异常
