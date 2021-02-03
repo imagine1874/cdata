@@ -5,6 +5,12 @@ import java.util.Map;
 
 public class HttpStringUtils {
 
+    /**
+     * 解析字符串& = 转换为map key value
+     * @param queryString 解析的字符串
+     * @return
+     * @throws Exception 测试抛出异常
+     */
     public static Map<String, String> parseQueryToMap(String queryString) throws Exception {
         // ""
         Map<String, String> paramsMap = new HashMap<>();
